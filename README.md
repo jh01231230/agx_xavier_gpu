@@ -1,5 +1,5 @@
-# Connect Your Nvidia GPU to Jetson AGX Xavier
-It is an instruction on how to use the PCI-e(Peripheral Component Interconnect Express) slot on Jetson AGX Xavier to connect your Nvidia GPU
+# Connect Your External Graphics Card to Jetson AGX Xavier
+It is an instruction on how to use the PCI-e(Peripheral Component Interconnect Express) slot on Jetson AGX Xavier to connect your external Nvidia GPU
 
 <p align="center">
 <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSbPG4kxay_Be_i4qD0DyT6GcdPaNDgNTy_9ucBshnC0PGS_ioXLtAfP5sJmDR1bQjtPEgEegzgl5cakr_jpQff_gwNi1sa2w" width="50%" height="50%">
