@@ -20,7 +20,7 @@ dpkg: error processing archive /var/cache/apt/archives/libnvidia-gl-535_535.86.0
 so in package nvidia-l4t-3d-core 35.2.1-20230124153320
 dpkg-deb: error: paste subprocess was killed by signal (Broken pipe)
 ```
-The errors you're seeing are due to dpkg (Debian package management system) trying to install a package that contains files that are already provided by another installed package. In this specific case, you're trying to install NVIDIA packages and they conflict with the already installed nvidia-l4t-* packages. To resolve this, you can force dpkg to overwrite the conflicting files.
+The errors you're seeing are due to dpkg (Debian package management system) trying to install a package that contains files that are already provided by another installed package. In this specific case, you're trying to install Nvidia packages and they conflict with the already installed nvidia-l4t-* packages. To resolve this, you can force dpkg to overwrite the conflicting files.
 ```
 sudo dpkg -i --force-overwrite /var/cache/apt/archives/libnvidia-compute-535_535.86.05-0ubuntu0.20.04.2_arm64.deb
 sudo dpkg -i --force-overwrite /var/cache/apt/archives/libnvidia-common-535*.deb
@@ -35,7 +35,7 @@ sudo apt --fix-broken install
 **Congratulations!** You have the display driver installed.
 
 ## After the Installation:
-Please do a full system reboot. Move the HDMI connection from Xavier to your GPU. After the reboot, the integrated GPU on Xavier will stop working.<br><br>
+Please do a full system reboot. Move the HDMI connection from Xavier to your GPU. After the reboot, the original integrated GPU on Xavier will be set aside and the new GPU will kick in.<br><br>
 You may use this command to check the running status of your GPU:
 ```
 nvidia-smi
